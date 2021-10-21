@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Frozen yoghurt",
+      "calories": "159",
+      "fat": "3.0",
+      "carbs": "2.5",
+      "protein": "53"
+    },
+    {
+      "id": 2,
+      "name": "Ice cream sandwich",
+      "calories": "177",
+      "fat": "6.0",
+      "carbs": "25",
+      "protein": "1.7"
+    },
+    {
+      "id": 3,
+      "name": "Eclair",
+      "calories": "120",
+      "fat": "4.0",
+      "carbs": "15",
+      "protein": "44"
+    }
+  ]
