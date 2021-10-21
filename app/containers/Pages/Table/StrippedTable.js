@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -12,6 +13,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Button from '@material-ui/core/Button';
 import styles from 'dan-components/Tables/tableStyle-jss';
 import dbs from '../../../../db.json';
+import EditForm from '../Forms/EditForm';
 
 // let id = 0;
 // function createData(name, calories, fat, carbs, protein) {
@@ -63,7 +65,7 @@ function StrippedTable(props) {
 								<TableCell align='right'>{n.carbs}</TableCell>
 								<TableCell align='right'>{n.protein}</TableCell>
 								<TableCell align='center'>
-									<Button color='secondary'>Edit</Button>|
+									<Button color='secondary'><Link to="/app/table/edit">Edit</Link></Button>|
 									<Button
 										color='secondary'
 										value={n.id}

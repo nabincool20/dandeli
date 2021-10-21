@@ -10,7 +10,8 @@ import {
   Form,
   Table,
   Error,
-  NotFound
+  NotFound,
+  EditForm,
 } from '../pageListAsync';
 
 function Application(props) {
@@ -26,6 +27,7 @@ function Application(props) {
         <Route path="/app/page-list" component={Parent} />
         <Route path="/app/pages/not-found" component={NotFound} />
         <Route path="/app/pages/error" component={Error} />
+        <Route path="/app/table/edit" component={EditForm} />
         <Route component={NotFound} />
       </Switch>
     </Dashboard>

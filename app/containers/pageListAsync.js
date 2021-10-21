@@ -20,6 +20,10 @@ export const Table = loadable(() =>
   import('./Pages/Table/BasicTable'), {
     fallback: <Loading />,
   });
+  export const EditForm = loadable(() =>
+  import ('./Pages/Forms/EditForm'), {
+    fallback: <Loading />,
+  });
 export const Login = loadable(() =>
   import('./Pages/Users/Login'), {
     fallback: <Loading />,
