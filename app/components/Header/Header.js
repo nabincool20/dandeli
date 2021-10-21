@@ -21,7 +21,7 @@ function Header(props) {
   const [open] = useState(false);
   const [fullScreen, setFullScreen] = useState(false);
   const [turnDarker, setTurnDarker] = useState(false);
-  const [showTitle, setShowTitle] = useState(false);
+  const [showTitle, setShowTitle] = useState(true);
 
   // Initial header style
   let flagDarker = false;
@@ -51,16 +51,16 @@ function Header(props) {
   }, []);
 
   const openFullScreen = () => {
-    setFullScreen(true);
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.mozRequestFullScreen) { /* Firefox */
-      elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE/Edge */
-      elem.msRequestFullscreen();
-    }
+    // setFullScreen(true);
+    // if (elem.requestFullscreen) {
+    //   elem.requestFullscreen();
+    // } else if (elem.mozRequestFullScreen) { /* Firefox */
+    //   elem.mozRequestFullScreen();
+    // } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    //   elem.webkitRequestFullscreen();
+    // } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    //   elem.msRequestFullscreen();
+    // }
   };
 
   const closeFullScreen = () => {
@@ -77,11 +77,11 @@ function Header(props) {
   };
 
   const turnMode = mode => {
-    if (mode === 'light') {
-      props.changeMode('dark');
-    } else {
-      props.changeMode('light');
-    }
+    // if (mode === 'light') {
+    //   props.changeMode('dark');
+    // } else {
+    //   props.changeMode('light');
+    // }
   };
 
   const {
