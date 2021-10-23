@@ -17,7 +17,7 @@ return(
        <Typography component="h1" variant="h5">
            Edit Data
        </Typography>
-        <Box component="form" noValidate onSubmit={handleSubmit} sx={{mt: 3}}>
+        <Box component="form" noValidate onSubmit={handleChange} sx={{mt: 3}}>
             <Grid container spacing={2}>
                 <Grid  item xs={12} sm={6}> 
                     <TextField
@@ -114,8 +114,8 @@ return(
                 label="Select"
                 onChange={handleChange}
                 >
-                 <MenuItem value={home}>Home</MenuItem>   
-                 <MenuItem value={Fax}>Fax</MenuItem>
+                 <MenuItem value=''>Home</MenuItem>   
+                 <MenuItem value=' '>Fax</MenuItem>
                 </Select>
                 <TextField 
                 id="select"
