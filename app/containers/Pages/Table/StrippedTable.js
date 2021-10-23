@@ -40,7 +40,7 @@ function StrippedTable(props) {
 		<Fragment>
 			<span>
 				<Button color='secondary'>
-					<Link to='/app/addform'>Add</Link>
+					<Link to='/app/add'>Add</Link>
 				</Button>
 			</span>
 			<Toolbar className={classes.toolbar}>
@@ -72,7 +72,7 @@ function StrippedTable(props) {
 								<TableCell align='right'>{n.protein}</TableCell>
 								<TableCell align='center'>
 									<Button color='secondary'>
-										<Link to='/editform'>Edit</Link>
+										<Link to='/app/edit'>Edit</Link>
 									</Button>
 									|
 									<Button
