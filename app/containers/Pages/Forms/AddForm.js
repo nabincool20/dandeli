@@ -1,9 +1,6 @@
 import React from 'react';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { Button, Container, Grid, MenuItem, Select } from '@material-ui/core';
+
+import { TextField, Box, Typography, Button, Container, Grid, MenuItem, Select } from '@material-ui/core';
 
 
 const AddForm = () => {
@@ -19,7 +16,7 @@ return(
        <Typography component="h1" variant="h5">
            Add Data
        </Typography>
-        <Box component="form" noValidate onSubmit={handleSubmit} sx={{mt: 3}}>
+        <Box component="form" noValidate onSubmit={handleChange} sx={{mt: 3}}>
             <Grid container spacing={2}>
                 <Grid  item xs={12} sm={6}> 
                     <TextField
@@ -116,8 +113,8 @@ return(
                 label="Select"
                 onChange={handleChange}
                 >
-                 <MenuItem value={home}>Home</MenuItem>   
-                 <MenuItem value={Fax}>Fax</MenuItem>
+                 <MenuItem value='home'>Home</MenuItem>   
+                 <MenuItem value='fax'>Fax</MenuItem>
                 </Select>
                 <TextField 
                 id="select"

@@ -14,6 +14,7 @@ import Button from '@material-ui/core/Button';
 import styles from 'dan-components/Tables/tableStyle-jss';
 import dbs from '../../../../db.json';
 import EditForm from '../Forms/EditForm';
+import AddForm from '../Forms/AddForm';
 
 // let id = 0;
 // function createData(name, calories, fat, carbs, protein) {
@@ -37,6 +38,11 @@ function StrippedTable(props) {
 
 	return (
 		<Fragment>
+			<span>
+				<Button color='secondary'>
+					<Link to='/app/addform'>Add</Link>
+				</Button>
+			</span>
 			<Toolbar className={classes.toolbar}>
 				<div className={classes.title}>
 					<Typography className={classes.title} variant='h6'>
@@ -65,7 +71,10 @@ function StrippedTable(props) {
 								<TableCell align='right'>{n.carbs}</TableCell>
 								<TableCell align='right'>{n.protein}</TableCell>
 								<TableCell align='center'>
-									<Button color='secondary'><Link to="/app/table/edit">Edit</Link></Button>|
+									<Button color='secondary'>
+										<Link to='/editform'>Edit</Link>
+									</Button>
+									|
 									<Button
 										color='secondary'
 										value={n.id}
